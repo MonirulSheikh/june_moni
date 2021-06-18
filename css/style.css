@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+}
+/* universal start */
+a { text-decoration: none;}
+li{
+    list-style: none
+}
+a:hover{
+    text-decoration: none;
+}
+P{
+    font-size: .9rem;
+    font-weight: 400;
+    color: #606060;
+    line-height: 1.6;
+}
+/* universal End */
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(rgba(0,168,255,0.3),rgba(0,168,255,.3)) ,url("../images/nature.png") ;
+    background-repeat: no-repeat;
+    background-size: 100%  100%;
+    position: relative;
+    clip-path: polygon(100% 0,100% 75%,50% 100%,0 75% ,0 0);
+    /* clip-path: polygon(50% 0,100% 50%, 50% 100%,0 50%); */
+}
+.header::before{
+    content: "";
+    position: absolute;
+    top: 0; bottom: 0; left: 0; right: 0;
+    opacity: .3;
+    z-index: -3;
+    background: linear-gradient(to right ,#1e5799 0%,#3ccdbb 0%,#16c9f6 100%);
+
+}
+.navbar::before{
+    content: "";
+    position: absolute;
+    top: 0; bottom: 0; left: 0; right: 0;
+    opacity: .3;
+    z-index: -3;
+    background: linear-gradient(to right ,#1e5799 0%,#3ccdbb 0%,#16c9f6 100%);  
+}
+.nav-item a{
+    color: #fff;
+    font-weight: bold;
+}
+    /* header section start */
+    
+    .header_section{
+        width: 100%;
+        height: inherit;
+        color: white;
+        text-align: center;
+        position: relative;
+    }
+
+    .center_div{
+        width: 100%;
+        height: auto;
+        position: absolute;
+top: 50%; 
+left: 50%;
+transform: translate(-50% ,-50%);
+-moz-transform: translate(-50% ,-50%);
+ -webkit-transform: translate(-50% ,-50%);
+-ms-transform: translate(-50% ,-50%);
+    }
+
+
+    .header_buttons a{
+         border: 1px solid #fff;
+         border-radius: 100px;
+         color: #fff;
+         margin: 0 5px;
+         padding: 12px 25px;
+font-weight: 400;
+         font-size: 16px;
+         outline: none;
+         line-height: 1.;
+         text-align: center;
+    }
+    .header_buttons a:hover{
+        color: #50d1c0;
+        background-color: #fff;
+        box-shadow: 0 0 20px 0 rgba(0, 0,0 ,0.3);
+    }
+
+    .center_div p{
+        font-size: 1.3rem;
+        padding: 10px 0 20px  0;
+        color: #fff;
+        
+    }
+    /* header section End */
+    /* three card start */
+.header_extra_div{
+    width: 100%;
+    height: auto;
+    margin: 100px 0;
+    text-align: center;
+}
+.extra_card{
+   background-color: #ffff;
+padding: 50px !important;
+border: medium none;
+
+border-radius: 5px;
+transition: 0.3s;
+
+}
+
+.extra_card:hover{
+    box-shadow: 0 0 20px 0 rgba(0, 0,0 ,0.3);
+    transform: translateY(50px); 
+}
+    /* three card end */
